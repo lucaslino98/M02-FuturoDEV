@@ -64,3 +64,8 @@ button {
     margin: 10px;
     align-items: center;
 }
+
+.check_ITEMUNDER {
+    text-decoration: line-through;
+
+}
