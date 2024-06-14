@@ -10,8 +10,8 @@
     display: flex;
     flex-direction: column;
     height: 100vh;
-    background-color: black;
-    background-image: url(src/img/background.webp);
+    background-color: beige;
+    background-image: url(src/img/background-tela.jpg);
     background-size: cover;
 }
 
@@ -75,6 +75,24 @@ a {
     gap: 20px;
     margin: 0px 70px;
 }
+
+.sociais {
+    display: flex;
+    align-items: center;
+    width: 50px;
+}
+
+.sociais ul li a img {
+    width: 29px;
+    height: 29px;
+    margin: 16px 0px
+}
+
+
+.redes {
+    list-style-type: none;
+}
+
 
 .title {
     font-size: 2.1rem;
