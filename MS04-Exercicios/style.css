@@ -73,11 +73,6 @@ a {
     gap: 10px;
 }
 
-.box-epsodio {
-    width: 240px;
-    height: 140px;
-    background-color: #cbcbcb;
-}
 
 .price-img {
     width: 392px;
@@ -113,4 +108,25 @@ a {
 
 .title {
     font-size: 2.1rem;
+}
+
+
+.box-epsodio {
+    display: flex;
+    width: 240px;
+    height: 140px;
+    background-color: #cbcbcb;
+    flex-direction: column;
+}
+
+
+.img_play {
+    display: flex;
+    height: 80%;
+    align-items: center;
+    justify-content: center;
+}
+
+.img_play img {
+    height: 50px;
 }

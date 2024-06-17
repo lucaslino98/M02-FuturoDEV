@@ -40,10 +40,23 @@ episodios.forEach(episodios => {
     const cardEP = document.createElement('div')
     cardEP.className = 'box-epsodio'
     cardEP.innerHTML = `
+
+    <div class="inf_eps">
     <span>${episodios.episodio}</span>
     <span>${episodios.tempo}</span>
+    </div>
+
+    <span class="img_play" id="play-${episodios.id}">
+    <img src="src/img/play_circle_24dp_FILL0_wght400_GRAD0_opsz24.png" alt="para dar play">
+    </span>
     `
     listaEP.appendChild(cardEP)
 })
 
+episodios.forEach(episodio => {
+    const playButton = document.getElementById(`play-${episodio.id}`)
+    playButton.addEventListener('click', () => {
+        alert(`Você clicou no ep: ${episodio.episodio}`)
+    })
+})
 
