@@ -5,7 +5,7 @@
     box-sizing: border-box;
 }
 
-body{
+body {
     background-image: url(src/img/background-tela.jpg);
     background-size: cover;
 }
@@ -16,7 +16,7 @@ body{
     height: 100vh;
     /* background-image: url(src/img/background-tela.jpg);
     background-size: cover; */
-    
+
 }
 
 .header {
@@ -38,6 +38,7 @@ body{
 li,
 a {
     text-decoration: none;
+    cursor: pointer;
 }
 
 
@@ -64,6 +65,18 @@ a {
     height: 100%;
     justify-content: center;
     align-items: center;
+}
+
+.episodios {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.box-epsodio {
+    width: 240px;
+    height: 140px;
+    background-color: #cbcbcb;
 }
 
 .price-img {
