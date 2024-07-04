@@ -1,0 +1,27 @@
+.c-H {
+    display: flex;
+    justify-content: center;
+    background-color: black;
+    color: #FFFF;
+}
+
+.Header {
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.493);
+    width: 70%;
+    height:100px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.Header img {
+    width: 136px;
+}
+
+.h-list {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+    font-size: 2rem;
+    
+}
