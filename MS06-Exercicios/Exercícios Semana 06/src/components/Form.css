@@ -1,0 +1,71 @@
+.f-For {
+    font: 600 1.125rem / 1.35 "Poppins", sans-serif;
+    display: flex;
+    width: 100vw;
+    min-height: 30vh;
+    justify-content: center;
+    align-items: center;
+    margin-top: 60px;
+}
+
+.c-Loja {
+    background-color: black;
+    height: 400px;
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.d-Form {
+    background-color:#aaa8a8;
+    height: 400px;
+    width: 30vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: #111111;
+}
+
+.m-Form {
+    background-color: #949292;
+    width: 500px;
+    height: 330px;
+    border-radius: 10px;
+}
+
+.d-Lin {
+    display: flex;
+    flex-direction: row;
+    margin: 30px;
+    gap: 40px;
+}
+
+.d-Text {}
+
+.i-Put {
+    padding: 12px;
+    border: 1px solid rgba(134, 132, 132, 0.89);
+    border-radius: 3px;
+}
+
+.d-Msg {
+    display: flex;
+    flex-direction: column;
+    margin: 0px 34px 0px 30px;
+    height: 180px;
+}
+
+.btn{
+    margin-top: 12px;
+    display: inline-block;
+    padding: 16px 32px;
+    background: linear-gradient(#ffbf00, #f2a50c);
+    border-radius: 4px;
+    font: 600 1.125rem / 1.35 "Poppins", sans-serif;
+    max-width: max-content;
+    border: none;
+    cursor: pointer
+}
