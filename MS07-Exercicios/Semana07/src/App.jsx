@@ -1,5 +1,6 @@
 
 import './App.css'
+import ComponentControlado from './components/componentemControlado'
 import Contador from './components/contador'
 import Estado from './components/estado'
 import Fetch from './components/fetch'
@@ -10,9 +11,10 @@ function App() {
   return (
     <>
       <Contador />
-      <Fetch/>
-      <Estado/>
-      <Form/>
+      <Fetch />
+      <Estado />
+      <Form />
+      <ComponentControlado />
     </>
   )
 }
