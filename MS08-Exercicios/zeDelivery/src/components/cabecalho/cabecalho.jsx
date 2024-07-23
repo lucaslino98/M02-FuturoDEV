@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import './cabecalho.css'
 import logo from './zeDelivery.png'
 
@@ -7,9 +8,11 @@ function Cabecalho() {
             <header className='header'>
                 <div className="d-header" >
                     <img src={logo} alt="logo" />
-                    <button className='btn-header'>ENTRAR</button>
+                    <Link className='btn-link' to='/login'>
+                        <button className='btn-header'>ENTRAR</button>
+                    </Link>
                 </div>
-            </header>
+            </header >
         </>
     )
 }
