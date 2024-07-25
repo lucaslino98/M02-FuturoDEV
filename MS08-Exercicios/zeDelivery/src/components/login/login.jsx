@@ -1,6 +1,9 @@
 import { useState } from 'react'
 import './login.css'
 import logo from './zeDelivery.png'
+import { Navigate } from 'react-router-dom'
+
+
 
 function Login() {
 
@@ -22,8 +25,15 @@ function Login() {
 
     function handleSubmit(e) {
         e.preventDefault();
-        console.log('Email informado :', login.email)
-        console.log('Senha informada :', login.password)
+        if (login.email !== 'admin@admin.com' && login.password !== 'admin123') {
+            <Navigate to='/' replace />
+            return
+            // console.log('Login ou senha errada, tente novamente.')
+        } else {
+            console.log('Logado com sucesso!')
+        }
+        // console.log('Email informado :', login.email)
+        // console.log('Senha informada :', login.password)
     }
 
     return (
@@ -31,7 +41,7 @@ function Login() {
             <div className="p-Login">
                 <div className='f-Login'>
                     <img src={logo} alt="logo zé delivery" />
-                    <h6>Insita seu email para login:</h6>
+                    <h6>Insira seu email para login:</h6>
 
                     <form onSubmit={handleSubmit}>
 
@@ -45,7 +55,7 @@ function Login() {
                             onChange={handleChange} />
                     </form>
 
-                    <button className='btn'>ENTRAR</button>
+                    <button onClick={handleSubmit} className='btn'>ENTRAR</button>
                     <h6>Precisa de ajuda? Entre no <a href="#">Me ajuda, Zé!</a></h6>
                 </div>
             </div>
