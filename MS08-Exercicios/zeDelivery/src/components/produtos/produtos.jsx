@@ -31,10 +31,10 @@ function Produtos() {
             <div className='escolha-produtos'>
                 {categorias.map(categoria => (
                     <ul className='produtos' key={categoria.id}>
-                        <li >
+                        <li className='li-produtos'>
                             <img src={categoria.imagem} alt={categoria.texto} />
-                            <span>{categoria.texto}</span>
                         </li>
+                            <span>{categoria.texto}</span>
                     </ul>
                 ))}
             </div>

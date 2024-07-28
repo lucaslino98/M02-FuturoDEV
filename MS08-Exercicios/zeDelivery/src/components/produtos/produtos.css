@@ -18,12 +18,24 @@
 .produtos li {
     display: flex;
     flex-direction: column;
-    gap: 10px;
     align-items: center;
-    padding-left: 30px;
+    justify-content: center;
+    height: 100px;
+    width: 150px;
+    gap: 5px;
+    padding: 20px;
+    background-color: #cccc;
+    border: 1px solid #cccc;
+    border-radius: 15px;
 }
 
 .produtos li img {
-    width: 130px;
-    height: 140px;
+    width: 100px;
+    height: 60px;
+}
+.produtos span {
+    display:flex;
+    justify-content: center;
+    padding-top: 5px;
+    font-size: 12px;
 }

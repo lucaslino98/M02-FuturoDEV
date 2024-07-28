@@ -5,6 +5,7 @@ const Modal = ({ show, onClose, onConfirm }) => {
   if (!show) {
     return null;
   }
+  
 
   return (
     <div className="modal-overlay">
