@@ -1,0 +1,33 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    gap: 10px;
+}
+
+input , select{
+    width: 190px;
+    height: 30px;
+    border: 1px solid #ccc;
+}
+
+button{
+    padding: 20px;
+    width: 100px;
+    border: 1px solid black;
+    border-radius: 10px;
+    /* background-color: #ccc; */
+    transition: background-color 0.5s;
+}
+
+button:hover{
+    background-color: rgba(0, 0, 0, 0.377);
+    cursor: pointer;
+}
